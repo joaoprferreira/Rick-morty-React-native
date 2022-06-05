@@ -1,11 +1,16 @@
 import React from 'react';
+import {SafeAreaView, Text, View} from 'react-native';
 
-//eslint-disable-next-line
-import {SafeAreaView, Text, useColorScheme} from 'react-native';
 import Routes from './src/routes';
 
 const App = () => {
-  return <Routes />;
+  return (
+    <SafeAreaView>
+      <View>
+        <Routes />
+      </View>
+    </SafeAreaView>
+  );
 };
 
 export default App;
