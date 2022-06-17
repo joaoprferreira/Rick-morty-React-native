@@ -1,15 +1,14 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
-
 import Routes from './src/routes';
+import {ThemeProvider} from 'styled-components';
+import theme from './src/styles/theme';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <View>
-        <Routes />
-      </View>
-    </SafeAreaView>
+    <ThemeProvider theme={theme}>
+      <Routes />
+    </ThemeProvider>
   );
 };
 
