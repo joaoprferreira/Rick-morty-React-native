@@ -1,20 +1,13 @@
 import React from 'react';
 
-import {Text, View, StyleSheet} from 'react-native';
+import * as S from './HomeStyle';
 
 function Home() {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Home screen</Text>
-    </View>
+    <S.Container>
+      <S.TextContainer>Home screen</S.TextContainer>
+    </S.Container>
   );
 }
-
-const style = StyleSheet.create({
-  Text: {
-    fontSize: 14,
-    color: 'green',
-  },
-});
 
 export default Home;
